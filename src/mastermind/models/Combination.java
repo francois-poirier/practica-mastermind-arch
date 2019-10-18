@@ -9,9 +9,9 @@ public abstract class Combination {
 	
 	private static final int WIDTH = 4;
 
-	protected List<Color> colors;
+	List<Color> colors;
 	
-	protected Combination (){
+	Combination(){
 		this.colors = new ArrayList<Color>();
 	}
 	

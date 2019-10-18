@@ -6,9 +6,9 @@ public class ColorView {
 	
 	public static final char[] INITIALS = {'r', 'b', 'y', 'g', 'o', 'p'};
 
-	protected Color color;
+	protected final Color color;
 
-	public ColorView(Color color) {
+	protected ColorView(Color color) {
 		this.color = color;
 	}
 

@@ -10,9 +10,9 @@ public enum MessageView {
 	WINNER("You've won!!! ;-)"),
 	LOOSER("You've lost!!! :-(");
 
-	private String message;
+	private final String message;
 	
-	private MessageView(String message) {
+	MessageView(String message) {
 		this.message = message;
 	}
 	

@@ -1,22 +1,16 @@
 package mastermind.views.console;
 
-import mastermind.controllers.Controller;
 import mastermind.views.MessageView;
 import santaTecla.utils.WithConsoleView;
 
-class SecretCombinationView extends WithConsoleView {
+public class SecretCombinationView extends WithConsoleView {
+
+	public SecretCombinationView(){}
 	
-	private Controller controller;
-	
-	SecretCombinationView (Controller controller){
-		this.controller = controller;
-	}
-	
-	void writeln() {
-		for (int i = 0; i < this.controller.getWidth(); i++) {
+	public void writeln(int width) {
+		for (int i = 0; i < width; i++) {
 			this.console.write(MessageView.SECRET.getMessage());
 		}
 		this.console.writeln();
 	}
-	
 }

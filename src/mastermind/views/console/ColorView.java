@@ -3,13 +3,13 @@ package mastermind.views.console;
 import mastermind.types.Color;
 import santaTecla.utils.Console;
 
-class ColorView extends mastermind.views.ColorView {
+public class ColorView extends mastermind.views.ColorView {
 
-	ColorView(Color color) {
+	public ColorView(Color color) {
 		super(color);
 	}
 	
-	void write() {
+	public void write() {
 		new Console().write(ColorView.INITIALS[this.color.ordinal()]);
 	}
 

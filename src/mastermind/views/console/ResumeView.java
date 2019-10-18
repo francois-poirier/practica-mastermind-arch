@@ -1,23 +1,14 @@
 package mastermind.views.console;
 
-import mastermind.controllers.ResumeController;
 import mastermind.views.MessageView;
 import santaTecla.utils.YesNoDialog;
 
-class ResumeView {
-	
-	private ResumeController resumeController;
+public class ResumeView {
 
-	ResumeView(ResumeController resumeController) {
-		this.resumeController = resumeController;
-	}
+	public ResumeView(){}
 
-	boolean interact() {
-		boolean newGame = new YesNoDialog().read(MessageView.RESUME.getMessage());
-		if (newGame) {
-			this.resumeController.clearGame();			
-		}
-		return newGame;
+	public boolean newGame() {
+		return new YesNoDialog().read(MessageView.RESUME.getMessage());
 	}
 
 }

@@ -5,16 +5,12 @@ import java.util.List;
 
 import mastermind.types.Color;
 
-public class Game {
+class Game {
 
 	private static final int MAX_LONG = 10;
-
 	private SecretCombination secretCombination;
-
 	private List<ProposedCombination> proposedCombinations;
-
 	private List<Result> results;
-
 	private int attempts;
 
 	public Game() {
@@ -33,6 +29,10 @@ public class Game {
 		this.proposedCombinations.add(proposedCombination);
 		this.results.add(this.secretCombination.getResult(proposedCombination));
 		this.attempts++;
+	}
+
+	int getGameWidth() {
+		return Combination.getWidth();
 	}
 
 	public boolean isLooser() {

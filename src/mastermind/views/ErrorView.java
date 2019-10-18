@@ -9,9 +9,9 @@ public class ErrorView {
 			"Wrong colors, they must be: " + ColorView.allInitials(), 
 			"Wrong proposed combination length" };
 
-	protected Error error;
+	protected final Error error;
 
-	public ErrorView(Error error) {
+	protected ErrorView(Error error) {
 		this.error = error;
 	}
 	

@@ -1,15 +1,19 @@
 package mastermind.controllers;
 
-import mastermind.models.Game;
+import mastermind.views.console.ResumeView;
+import mastermind.models.Session;
 
 public class ResumeController extends Controller {
 
-	public ResumeController(Game game) {
-		super(game);
+	public ResumeController(Session session) {
+		super(session);
 	}
 
-	public void clearGame() {
-		this.game.clear();
+	public void control() {
+		if (new ResumeView().newGame()) {
+			this.session.resume();
+		}
+		this.session.next();
 	}
 
 }
