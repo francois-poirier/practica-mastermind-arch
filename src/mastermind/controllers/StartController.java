@@ -11,7 +11,7 @@ public class StartController extends Controller {
 	}
 	
 	public void control(){
-		new StartView().writeGameIntro();
+		new StartView().write();
 		new SecretCombinationView().writeln(this.session.getGameWidth());
 		session.next();
 	}

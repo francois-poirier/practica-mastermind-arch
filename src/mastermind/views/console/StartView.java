@@ -7,7 +7,7 @@ public class StartView extends WithConsoleView {
 
 	public StartView(){ }
 
-	public void writeGameIntro() {
+	public void write() {
 		this.console.writeln(MessageView.TITLE.getMessage());
 	}
 
